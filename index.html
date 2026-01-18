@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RN Energy – Demo Mode</title>
+
+<link rel="manifest" href="manifest.json">
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#061a26;
+  color:white;
+  text-align:center;
+}
+.header{
+  background:#19d3f3;
+  padding:20px;
+  color:black;
+}
+.card{
+  margin:20px;
+  padding:20px;
+  background:#0b2c3d;
+  border-radius:15px;
+}
+button{
+  padding:15px 30px;
+  border:none;
+  border-radius:30px;
+  font-size:18px;
+  margin:10px;
+}
+.on{background:#00ff88;}
+.off{background:#ff4d4d;}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>RN Energy</h1>
+  <p>Offline Demo Mode</p>
+</div>
+
+<div class="card">
+  <h2>Motor Control</h2>
+  <button class="on" onclick="motorOn()">MOTOR ON</button>
+  <button class="off" onclick="motorOff()">MOTOR OFF</button>
+  <p id="status">Status: OFF</p>
+</div>
+
+<script>
+function motorOn(){
+  document.getElementById("status").innerText="Status: RUNNING";
+}
+function motorOff(){
+  document.getElementById("status").innerText="Status: OFF";
+}
+</script>
+
+</body>
+</html>
