@@ -1,0 +1,8 @@
+{
+  "name": "RN Energy Demo",
+  "short_name": "RN Demo",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#061a26",
+  "theme_color": "#19d3f3"
+}
